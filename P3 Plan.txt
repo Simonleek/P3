@@ -1,0 +1,30 @@
+Assignment 3 Route Plan. 
+
+Blade Template
+- Title 
+- Css in Head
+
+Home Page
+- Description 
+- Link to Lorem Ipsum Generator
+- Description
+- Link to Random User Generator
+- link to P1 home
+
+Lorem Ipsum Generator
+- Some text
+- How many paragraphs
+- Generate button
+
+User Generator 
+- some text 
+- How many user
+- Generate button
+
+Purpose 							Method 					URI
+=============================================================================================
+Homepage							Get						/
+Show form Lorem Ipsum Generator 	Get 					/Lorem/
+Process form to generate paragraphs Post					/Lorem/
+Show User Generator					Get						/User/
+Process form user generator			Post 					/User/	
