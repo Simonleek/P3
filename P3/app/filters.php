@@ -98,7 +98,7 @@ Route::filter('isNumeric', function()
 	$query=Input::get('query');
 	if (is_numeric ( $query ) == False)
 	{
-	return View::make(Request::segment(1))
+	return View::make(strtolower(Request::segment(1)))
 		//return View::make(Request::path())
 		->with('message','Invalid Data Entry.  Please try again.')
 		->with('result', array(''));
