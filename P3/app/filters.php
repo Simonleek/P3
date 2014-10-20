@@ -88,3 +88,18 @@ Route::filter('csrf', function()
 		throw new Illuminate\Session\TokenMismatchException;
 	}
 });
+/*
+|---------------------------------------------------
+|Simon's Customer Filter - Check numeric 
+|---------------------------------------------------
+*/
+Route::filter('isNumeric', function()
+{
+	$query=Input::get('query');
+	if (is_numeric ( $query ) == False)
+	{
+		return View::make(Request::path())
+		->with('message','Invalid Data Entry.  Please try again.')
+		->with('result', array(''));
+	}
+});
