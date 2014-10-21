@@ -55,7 +55,7 @@ User Generator (user.blade.php)
 The routing table is listed below: 
 | Purpose        | Method           | URI  |
 | ------------- |:-------------:| -----:|
-|Homepage							|Get|						/|
+|Homepage							|Get|						/ |
 |Show form Lorem Ipsum Generator 	|Get |					/Lorem/|
 |Process form to generate paragraphs |Post|					/Lorem/|
 |Show User Generator					|Get|						/User/|
