@@ -53,6 +53,8 @@ User Generator (user.blade.php)
 - Generate button
 
 The routing table is listed below: 
+
+
 | Purpose        | Method           | URI  |
 | ------------- |:-------------:| -----:|
 |Homepage							|Get|						/ |
