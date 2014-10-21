@@ -19,6 +19,7 @@ Lorem Ipsum Generator
 User Generator 
 - some text 
 - How many user
+- Birthday
 - Generate button
 
 Purpose 							Method 					URI

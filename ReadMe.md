@@ -24,10 +24,35 @@ The following elements are used
 N/A
 
 ## Details for teaching team
+
+The following views are created for this project:
+
+Blade Template(_master.blade.php)
+- Title 
+- Css in Head
+
+Home Page (index.blade.php)
+- Description 
+- Link to Lorem Ipsum Generator
+- Description
+- Link to Random User Generator
+- link to P1 home
+
+Lorem Ipsum Generator (lorem.blade.php)
+- Some text
+- How many paragraphs
+- Generate button
+
+User Generator (user.blade.php)
+- some text 
+- How many user
+- Birthday
+- Generate button
+
+The routing table is listed below: 
 | Purpose        | Method           | URI  |
 | ------------- |:-------------:| -----:|
 |Homepage							|Get|						/|
-|Homepage							|Get|						/index|
 |Show form Lorem Ipsum Generator 	|Get |					/Lorem/|
 |Process form to generate paragraphs |Post|					/Lorem/|
 |Show User Generator					|Get|						/User/|

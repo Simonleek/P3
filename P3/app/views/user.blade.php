@@ -14,7 +14,7 @@
 		{{ Form::checkbox('incl_pf', '1', false) }}</br>
 		{{ Form::submit('Get User'); }}
 	{{ Form::close() }}
-	<a href='/index' >Back</a><hr>
+	<a href='/' >Back</a><hr>
 	@if ($message != '')
 		<h3>{{{$message}}}</h3><hr>
 	@endif

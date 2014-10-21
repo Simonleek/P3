@@ -10,7 +10,7 @@
 		{{ Form::text('query'); }}
 		{{ Form::submit('Get Paragraph'); }}
 	{{ Form::close() }}
-	<a href='/index' >Back</a><hr>
+	<a href='/' >Back</a><hr>
 	@if ($message != '')
 		<h3>{{{$message}}}</h3><hr>
 	@endif
