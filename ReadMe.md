@@ -24,9 +24,18 @@ The following elements are used
 N/A
 
 ## Details for teaching team
-N/A
+| Purpose        | Method           | URI  |
+| ------------- |:-------------:| -----:|
+|Homepage							|Get|						/|
+|Homepage							|Get|						/index|
+|Show form Lorem Ipsum Generator 	|Get |					/Lorem/|
+|Process form to generate paragraphs |Post|					/Lorem/|
+|Show User Generator					|Get|						/User/|
+|Process form user generator			|Post| 					/User/	|
+
 
 ## Outside code
-The following external packages are used 
-https://packagist.org/packages/badcow/lorem-ipsum  - This package is used to generate random paragraphs 
-https://packagist.org/packages/fzaninotto/faker - This package is used to generate random users
+The following external packages are used
+
+[https://packagist.org/packages/badcow/lorem-ipsum](https://packagist.org/packages/badcow/lorem-ipsum)  - This package is used to generate random paragraphs 
+[https://packagist.org/packages/fzaninotto/faker](https://packagist.org/packages/fzaninotto/faker) - This package is used to generate random users
