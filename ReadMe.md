@@ -8,8 +8,11 @@ The goal of this project is to practice the essentials of building a Laravel-bas
 The following elements are used
 
 - Edited Composer.json with Faker user generation application, and Lorem-Ipsum random text generator.
+
 		"fzaninotto/faker": "1.5.*@dev",
+		
 		"badcow/lorem-ipsum": "dev-master"
+		
 - Use Composer install/update to download package to Laravel application
 - Update app.php to create alais to the packages
 - Updated Routes.php to control routes
