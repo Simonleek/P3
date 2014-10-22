@@ -5,11 +5,7 @@ Route::get('/', function()
 {
 	return View::make('index');
 });
-/*
-Route::get('/index', function()
-{
-	return View::make('index');
-});*/
+
 // Show form Lorem Ipsum Generator
 Route::get('/Lorem', function() {
 	return View::make('lorem')

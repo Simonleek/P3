@@ -1,25 +1,79 @@
-## Laravel PHP Framework
+# Laravel Basics
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/downloads.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+## Live URL
+<http://p3.simonleetoronto.me>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, and caching.
+## Description
+The goal of this project is to practice the essentials of building a Laravel-based site. 
+The following elements are used
 
-Laravel aims to make the development process a pleasing one for the developer without sacrificing application functionality. Happy developers make the best code. To this end, we've attempted to combine the very best of what we have seen in other web frameworks, including frameworks implemented in other languages, such as Ruby on Rails, ASP.NET MVC, and Sinatra.
+- Edited Composer.json with Faker user generation application, and Lorem-Ipsum random text generator.
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+		"fzaninotto/faker": "1.5.*@dev",
+		
+		"badcow/lorem-ipsum": "dev-master"
+		
+- Use Composer install/update to download package to Laravel application
+- Update app.php to create alais to the packages
+- Updated Routes.php to control routes
+- Updated Filters.php to check form input value
+- Added P3CSS.css in public folder
+- Added _master.blade.php template
+- Inherited _master.blade.php and created index.blade.php, lorem.blade.php, and user.blade.php
+- Deployed a Laravel app on a live server.
 
-## Official Documentation
 
-Documentation for the entire framework can be found on the [Laravel website](http://laravel.com/docs).
+## Demo
 
-### Contributing To Laravel
+[http://www.screencast.com/t/H70gZlehP2v](http://www.screencast.com/t/H70gZlehP2v)
 
-**All issues and pull requests should be filed on the [laravel/framework](http://github.com/laravel/framework) repository.**
 
-### License
+## Details for teaching team
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+The following views are created for this project:
+
+Blade Template(_master.blade.php)
+- Title 
+- Css in Head
+- link to P1 home page 
+
+Home Page (index.blade.php)
+- Description 
+- Link to Lorem Ipsum Generator
+- Description
+- Link to Random User Generator
+
+Lorem Ipsum Generator (lorem.blade.php)
+- text box
+- How many paragraphs
+- Generate button
+- link to home page
+
+User Generator (user.blade.php)
+- text box
+- How many user
+- Birthday
+- Generate button
+- link to home page
+
+The routing table is listed below: 
+
+
+| Purpose        | Method           | URI  |
+| ------------- |:-------------:| -----:|
+|Homepage							|Get|						/ |
+|Show form Lorem Ipsum Generator 	|Get |					/Lorem/|
+|Process form to generate paragraphs |Post|					/Lorem/|
+|Show User Generator					|Get|						/User/|
+|Process form user generator			|Post| 					/User/	|
+
+Filter 
+
+A filter called "isNumeric" is created to ensure the text box entry is a numeric input.  I was called as a "before" filter for the User generator and Paragraph generator.
+
+
+## Outside code
+The following external packages are used
+
+[https://packagist.org/packages/badcow/lorem-ipsum](https://packagist.org/packages/badcow/lorem-ipsum)  - This package is used to generate random paragraphs 
+[https://packagist.org/packages/fzaninotto/faker](https://packagist.org/packages/fzaninotto/faker) - This package is used to generate random users
