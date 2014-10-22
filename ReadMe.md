@@ -33,24 +33,26 @@ The following views are created for this project:
 Blade Template(_master.blade.php)
 - Title 
 - Css in Head
+- link to P1 home page 
 
 Home Page (index.blade.php)
 - Description 
 - Link to Lorem Ipsum Generator
 - Description
 - Link to Random User Generator
-- link to P1 home
 
 Lorem Ipsum Generator (lorem.blade.php)
-- Some text
+- text box
 - How many paragraphs
 - Generate button
+- link to home page
 
 User Generator (user.blade.php)
-- some text 
+- text box
 - How many user
 - Birthday
 - Generate button
+- link to home page
 
 The routing table is listed below: 
 
@@ -62,6 +64,10 @@ The routing table is listed below:
 |Process form to generate paragraphs |Post|					/Lorem/|
 |Show User Generator					|Get|						/User/|
 |Process form user generator			|Post| 					/User/	|
+
+Filter 
+
+A filter called "isNumeric" is created to ensure the text box entry is a numeric input.  I was called as a "before" filter for the User generator and Paragraph generator.
 
 
 ## Outside code
